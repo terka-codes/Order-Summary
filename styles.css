@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid black;
 }
 
 html {
@@ -11,7 +10,6 @@ html {
     background-repeat: no-repeat; 
     background-size:contain;
     background-position: top;
-    
 }
 
 #card-position {
@@ -20,29 +18,31 @@ html {
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    overflow: hidden;
 }
 
 #card {
-    width: 450px;
-    height: 697px;
+    width: 87%;
+    height: 80%;
+    max-width: 450px;
+    max-height: 697px;
     border-radius: 20px;
     background-color: white;
     text-align: center;
+    box-shadow: 0px 20px 20px hsl(245, 75%, 52%, 0.1);
 }
 
 #content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 476px;
     margin-top: -1.5%;
     gap: 1.5rem;
 }
 
 #card > img {
     border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: auto;
 }
 
 #tarif {
@@ -56,15 +56,114 @@ html {
     align-items: center;
     
 }
- /*
-#tarif > img {
-    
+
+#text > h1 {
+    margin: 46px auto 20px auto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 37px;
+    color: hsl(223, 47%, 23%);
 }
 
-#tarif > #text2 {
-    
+#text > p {
+    width: 338px;
+    height: 74px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: hsl(224, 23%, 55%);
+}
+
+#tarif > img {
+    margin: auto auto auto 25px;
+}
+
+#tarif > #text_tarif {
+    text-align: left;
+    padding-left: 5px;
+}
+
+#text_tarif > h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: hsl(223, 47%, 23%);
+    padding: 0 0 2px 0;
+}
+
+#text_tarif > p {
+    color: hsl(224, 23%, 55%);
+    padding: 2px 0 0 0;
 }
 
 #tarif > a {
-    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: hsl(245, 75%, 52%);
+    padding-right: 15px;
+}
+
+#button {
+    width: 78.66%;
+    height: 50px;
+    border-radius: 12px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 700;
+    font-size: 15.5px;
+    line-height: 21px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    box-shadow: 0px 20px 20px hsl(245, 75%, 52%, 0.2);
+}
+
+#cancel > a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+}
+
+#tarif > a:hover {
+    color: #6b60e8;
+    text-decoration: none;
+}
+
+#button:hover {
+    background-color: #6b60e8;
+}
+
+#cancel > a:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+.attribution > p {
+    text-align: center;
+    background-color: #d0d5fc;
+    padding: 10px 0;
+}
+.attribution > p > a:link, .attribution > p > a:visited  {
+    color: hsl(223, 47%, 23%);
+}
+
+.attribution > p > a:hover {
+    color: white;
+    border-radius: 20px;
+    padding: 1px 8px 4px 8px;
+    background-color: hsl(245, 75%, 52%);
+}
+
+/* mobil devices - resolution 375x709px */
+@media screen and (max-width: 380px) {
+    #card {
+        width: 87%;
+        height: 80%;
+
+    }
 }
