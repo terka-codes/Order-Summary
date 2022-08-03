@@ -10,6 +10,7 @@ html {
     background-repeat: no-repeat; 
     background-size:contain;
     background-position: top;
+    height: 100vh;
 }
 
 #card-position {
@@ -57,7 +58,7 @@ html {
     
 }
 
-#text > h1 {
+h1 {
     margin: 46px auto 20px auto;
     font-style: normal;
     font-weight: 900;
@@ -85,7 +86,7 @@ html {
     padding-left: 5px;
 }
 
-#text_tarif > h3 {
+h3 {
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
@@ -143,10 +144,15 @@ html {
     color: hsl(223, 47%, 23%);
 }
 
-.attribution > p {
+.attribution {
     text-align: center;
     background-color: #d0d5fc;
-    padding: 10px 0;
+    padding: 1px 0;
+    font-size: 11px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 .attribution > p > a:link, .attribution > p > a:visited  {
     color: hsl(223, 47%, 23%);
@@ -155,7 +161,7 @@ html {
 .attribution > p > a:hover {
     color: white;
     border-radius: 20px;
-    padding: 1px 8px 4px 8px;
+    padding: 1px 5px 3px 5px;
     background-color: hsl(245, 75%, 52%);
 }
 
@@ -164,6 +170,31 @@ html {
     #card {
         width: 87%;
         height: 80%;
+    }
 
+    #content {
+        padding: 25px;
+    }
+
+    h1 {
+        margin: 6px 0 17px 0;
+    }
+
+    #text > p {
+        width: 254px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 165%;
+    }
+
+    #tarif {
+        width: 277px;
+        height: 80px;
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 14px;
     }
 }
+
