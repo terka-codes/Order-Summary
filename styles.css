@@ -83,7 +83,7 @@ h1 {
 
 #tarif > #text_tarif {
     text-align: left;
-    padding-left: 5px;
+    margin-left: 5px;
 }
 
 h3 {
@@ -169,15 +169,16 @@ h3 {
 @media screen and (max-width: 380px) {
     #card {
         width: 87%;
-        height: 80%;
+        height: 85%;
     }
 
     #content {
-        padding: 25px;
+        padding: 0 25px 25px 25px;
+        height: auto;
     }
 
     h1 {
-        margin: 6px 0 17px 0;
+        margin: 31px 0 17px 0;
     }
 
     #text > p {
@@ -196,5 +197,26 @@ h3 {
     h3 {
         font-size: 14px;
     }
+
+    #button {
+        margin: 0;
+        width: 100%;
+    }
+
+    #cancel {
+        margin-top: -6px;
+    }
+
+    #tarig > img {
+        margin: auto auto auto 6px;
+    }
+
+    #tarif > #text_tarif {
+        margin-left: 14px;
+        line-height: 22px;
+    }
+     #tarif > h3, #tarif > p {
+        padding: 0;
+     }
 }
 
