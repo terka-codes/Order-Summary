@@ -166,10 +166,11 @@ h3 {
 }
 
 /* mobil devices - resolution 375x709px */
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 400px) {
     #card {
         width: 87%;
         height: 85%;
+        max-height: 575px;
     }
 
     #content {
@@ -187,6 +188,7 @@ h3 {
         font-size: 15px;
         line-height: 165%;
     }
+
 
     #tarif {
         width: 277px;
