@@ -55,7 +55,6 @@ html {
     border-radius: 12px;
     justify-content: center;
     align-items: center;
-    
 }
 
 h1 {
@@ -161,7 +160,7 @@ h3 {
 .attribution > p > a:hover {
     color: white;
     border-radius: 20px;
-    padding: 1px 5px 3px 5px;
+    padding: 0px 3px 1px 3px;
     background-color: hsl(245, 75%, 52%);
 }
 
